@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="WpfTest.PageControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:wpfCore="clr-namespace:WpfCore;assembly=WpfCore"
+             xmlns:local="clr-namespace:WpfTest"
+             mc:Ignorable="d" >
+    <Grid>
+        <Frame x:Name="OldPage" wpfCore:NoFrameHistoryAttachedProperty.Value="True"/>
+        <Frame x:Name="NewPage" wpfCore:NoFrameHistoryAttachedProperty.Value="True"/>
+    </Grid>
+</UserControl>

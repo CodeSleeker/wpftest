@@ -1,0 +1,20 @@
+﻿<wpfCore:BasePage x:Class="WpfTest.PageOne" x:TypeArguments="local:PageOneViewModel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:wpfCore="clr-namespace:WpfCore;assembly=WpfCore"
+      xmlns:local="clr-namespace:WpfTest"
+      mc:Ignorable="d" 
+      Title="PageOne">
+    <Grid Background="Blue">
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <TextBox Width="300" FontSize="30"
+                     Tag="this is a tag"
+                     Style="{StaticResource TextStyle}"
+                     wpfCore:IsFocusedAttachedProperty.Value="True"/>
+        </StackPanel>
+    </Grid>
+</wpfCore:BasePage>
